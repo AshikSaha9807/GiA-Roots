@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<job config="./test_project/config_reviewer.xml" driver="xml" connection_string="./test_project/project_reviewer">
+<upload connection_string="./test_images/" />
+<compute transform="transform_manual_cropping" type="rawimage" />
+<compute types="averagerootwidthx2feature;bushinessfeature;ccomponentscountfeature;cleanedimage;croppedimage;depthfeature;ellipseaxesaspectratiofeature;grayimage;lengthdistrfeature;majorellipseaxesfeature;maximumnumberofrootsfeature;maxwidthfeature;mediannumberofrootsfeature;minorellipseaxesfeature;networkareafeature;networkconvexareafeature;perimeterfeature;solidityfeature;specificrootlengthfeature;surfaceareafeature;thinnedimage;thresholdedimage;totallengthfeature;volumefeature;widthdepthratiofeature" />
+<export driver="csv" connection_string="./results_clui_test.csv" />
+</job>

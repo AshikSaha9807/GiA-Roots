@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<configuration>
+    <algorithm id="algorithm_manager_defaults">
+        <property name="averagerootwidthx2feature" value="features_skeleton_v2" />
+        <property name="bushinessfeature" value="feature_roots_number" />
+        <property name="ccomponentscountfeature" value="feature_components" />
+        <property name="cleanedimage" value="cleaning_skip" />
+        <property name="croppedimage" value="cropping_manual" />
+        <property name="depthfeature" value="features_skeleton_v2" />
+        <property name="ellipseaxesaspectratiofeature" value="feature_ellipse_axes" />
+        <property name="grayimage" value="preparation_color_2_gray" />
+        <property name="lengthdistrfeature" value="features_skeleton_v2" />
+        <property name="majorellipseaxesfeature" value="feature_ellipse_axes" />
+        <property name="maximumnumberofrootsfeature" value="feature_roots_number" />
+        <property name="maxwidthfeature" value="features_skeleton_v2" />
+        <property name="mediannumberofrootsfeature" value="feature_roots_number" />
+        <property name="minorellipseaxesfeature" value="feature_ellipse_axes" />
+        <property name="networkareafeature" value="feature_network_areas" />
+        <property name="networkconvexareafeature" value="feature_network_areas" />
+        <property name="perimeterfeature" value="feature_perimeter" />
+        <property name="solidityfeature" value="feature_network_areas" />
+        <property name="specificrootlengthfeature" value="features_skeleton_v2" />
+        <property name="surfaceareafeature" value="features_skeleton_v2" />
+        <property name="thinnedimage" value="thinning_binary" />
+        <property name="thresholdedimage" value="thresholding_adaptive" />
+        <property name="totallengthfeature" value="features_skeleton_v2" />
+        <property name="volumefeature" value="features_skeleton_v2" />
+        <property name="widthdepthratiofeature" value="features_skeleton_v2" />
+    </algorithm>
+    <core>
+        <property name="serialize_image_format" value="png" />
+        <property name="serialize_to" value="./test_project/" />
+        <property name="thread_pool_size" value="2" />
+    </core>
+    <algorithm id="gui">
+        <property name="targets" value="averagerootwidthx2feature;bushinessfeature;ccomponentscountfeature;cleanedimage;croppedimage;depthfeature;ellipseaxesaspectratiofeature;grayimage;lengthdistrfeature;majorellipseaxesfeature;maximumnumberofrootsfeature;maxwidthfeature;mediannumberofrootsfeature;minorellipseaxesfeature;networkareafeature;networkconvexareafeature;perimeterfeature;solidityfeature;specificrootlengthfeature;surfaceareafeature;thinnedimage;thresholdedimage;totallengthfeature;volumefeature;widthdepthratiofeature" />
+    </algorithm>
+    <algorithm id="preparation_color_2_gray">
+        <property name="reverse" value="false" />
+        <property name="simple" value="true" />
+    </algorithm>
+    <algorithm id="thresholding_adaptive">
+        <property name="adaptive_method" value="CV_ADAPTIVE_THRESH_MEAN_C" />
+        <property name="block_size" value="44" />
+        <property name="max_component_size_to_ignore" value="4000" />
+        <property name="subtract_constant" value="-1.4285" />
+        <property name="threshold_type" value="CV_THRESH_BINARY" />
+    </algorithm>
+    <algorithm id="thresholding_double_adaptive">
+        <property name="block_size" value="15" />
+        <property name="drop_value" value="5" />
+        <property name="max_component_size_to_ignore" value="4000" />
+    </algorithm>
+    <algorithm id="thresholding_global">
+        <property name="max_component_size_to_ignore" value="4000" />
+        <property name="threshold" value="150" />
+        <property name="threshold_type" value="CV_THRESH_BINARY" />
+    </algorithm>
+    <algorithm id="transform_manual_cropping">
+        <property name="cropping_height" value="1413" />
+        <property name="cropping_left" value="231" />
+        <property name="cropping_top" value="66" />
+        <property name="cropping_width" value="725" />
+    </algorithm>
+    <algorithm id="transform_rotation">
+        <property name="flip" value="none" />
+        <property name="rotate" value="0" />
+    </algorithm>
+    <algorithm id="transform_setscale">
+        <property name="metric_scale" value="1" />
+    </algorithm>
+</configuration>
