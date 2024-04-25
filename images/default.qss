@@ -1,0 +1,38 @@
+/* empty stylesheet */
+
+QLabel {
+    font: bold;
+}
+
+/* Bold text on status bar looks awful. */
+QStatusBar QLabel {
+   color: #ffffff;
+   font: normal;
+}
+
+
+/* Make the entire row selected in item views. */
+QAbstractItemView {
+    show-decoration-selected: 1;
+}
+
+/* Customize the menu bar. */
+QMenuBar {
+    border-image: none;
+    border-style: none;
+    border-width: 0px;
+    border-bottom-style: solid;
+    border-bottom-color: darkslategray;
+    padding: 2px;
+}
+
+QStatusBar::item {
+    border: 0px;
+}
+
+QStatusBar {
+    border-width: 1px;
+    border-top-style: solid;
+    border-top-color: #000000;/*e6e6e6;*/
+    background-color: #909090;/*c8c8c8;96a0c8;*/
+}
